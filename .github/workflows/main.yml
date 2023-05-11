@@ -13,7 +13,8 @@ jobs:
     steps:
       -name: print hello
       run: echo "Hello"
-      -name: aws --version
+      -name: version
+      run: aws --version
       -name: commit github sha
       run: First_name: "-$({ github.sha })"
   job2:
