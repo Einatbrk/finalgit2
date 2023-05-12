@@ -12,21 +12,21 @@ jobs:
     runs-on: ubunto-latest
     steps:
       -name: print hello
-      run: echo "Hello"
+       run: echo "Hello"
       -name: version
-      run: aws --version
+       run: aws --version
       -name: commit github sha
-      run: First_name: "-$({ github.sha })"
+       run: First_name: "-$({ github.sha })"
   job2:
     runs-on: ubunto-latest
     needs: [job1]
     steps:
       -name: cat1
-      run: cat 1.txt
-      name: cat2
-      run: cat 2.txt
+       run: cat 1.txt
+      -name: cat2
+       run: cat 2.txt
       -name: run test.sh
-      run:|
+       run: |
         chmode777 .test.sh
         ./test.sh
   job3:
@@ -36,9 +36,9 @@ jobs:
       env.Last_name: "Barak"
     steps:  
       -name: general env
-      run: echo " application name ${{ env.First_name }}"
+       run: echo " application name ${{ env.First_name }}"
       -name: local env
-      run: echo " $Last_name "
+       run: echo " $Last_name "
       -name: secret1
-      run: echo ${{ secrets.MOBILE_NUM }}
+       run: echo ${{ secrets.MOBILE_NUM }}
     
