@@ -1,14 +1,15 @@
-name: Final_project
+name: My Workflow
 
 on:
   push:
-    branches: [ "main" ]
-env:
-    First_name: "Einat"
-    Relis_name: "First.name-${{github.sha}}
-jobs:
-  job1:
-    runs-on: ubuntu-latest
+    branches: [ main ]
 
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-        run: echo "Hello"
+    - name: Do multiple things
+      run: |
+        echo "Running command 1"
+        echo "Running command 2"
+        echo "Running command 3"
