@@ -11,3 +11,18 @@ jobs:
     steps:
         - name: Hello
           run: echo "hello"
+        - name: version
+          run: aws --version
+        - name: Hello
+          run: First_name:"-${{ github.sha}}"
+  Job2:
+    runs-on: ubunto-latest
+    steps:
+      - name: cat1
+        run: cat 1.txt
+      - name: cat2
+        run: cat 2.txt
+      - name: run test.sh
+        run: |
+              chmode777.test.sh
+               ./test.sh
