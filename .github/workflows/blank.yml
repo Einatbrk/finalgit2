@@ -15,7 +15,6 @@ jobs:
         echo "Running command 3"
  job2:
     runs-on: ubunto-latest
-    needs: [job1]
     steps:
       -name: cat1
        run: cat 1.txt
