@@ -13,7 +13,7 @@ jobs:
         echo "Running command 1"
         echo "Running command 2"
         echo "Running command 3"
- job2:
+   job2:
     runs-on: ubunto-latest
     steps:
       -name: cat1
