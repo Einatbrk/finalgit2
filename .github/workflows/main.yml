@@ -11,10 +11,8 @@ jobs:
   job1:
     runs-on: ubunto-latest
     steps:
-      -name: print hello
        run: echo "Hello"
-
-      -name: commit github sha
+       run: aws --version
        run: First_name: "-$({ github.sha })"
   job2:
     runs-on: ubunto-latest
