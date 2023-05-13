@@ -11,12 +11,12 @@ jobs:
   job1:
     runs-on: ubunto-latest
     steps:
-    -name: print hello
-     run: echo "Hello"
-    -name: ver
-     run: aws --version
-    -name: commit github sha
-     run: First_name: "-$({ github.sha })"
+      -name: print hello
+       run: echo "Hello"
+      -name: ver
+       run: aws --version
+      -name: commit github sha
+       run: First_name: "-$({ github.sha })"
   job2:
     runs-on: ubunto-latest
     needs: [job1]
