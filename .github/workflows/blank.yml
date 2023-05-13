@@ -12,6 +12,5 @@ jobs:
 
     steps:
         run: echo "Hello"
-                  run: aws --version
-                     run: aws --version
+                  run: lsb_release -a
                         run: First_name: "-${{ github.sha }}"
