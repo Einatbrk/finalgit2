@@ -11,13 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: print hello
         run: echo "Hello"
-              -name: ver
                   run: aws --version
-        
-        - name: Version
-          run: aws --version
-        
-            - name: commit sha
-                run: First_name: "-${{ github.sha }}"
+                     run: aws --version
+                        run: First_name: "-${{ github.sha }}"
