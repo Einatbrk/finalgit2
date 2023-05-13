@@ -4,20 +4,20 @@ on:
   push:
     branches: [ main ]
 
-jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Do multiple things
-      run: |
-        echo "Running command 1"
-        echo "Running command 2"
-        echo "Running command 3"
-   job2:
-    runs-on: ubunto-latest
-    steps:
-      -name: cat1
-       run: cat 1.txt
-      -name: cat2
-       run: cat 2.txt
+ jobs:
+   my-job:
+     runs-on: ubuntu-latest
+     steps:
+     - name: Do multiple things
+       run: |
+         echo "Running command 1"
+         echo "Running command 2"
+         echo "Running command 3"
+    job2:
+     runs-on: ubunto-latest
+     steps:
+       -name: cat1
+        run: cat 1.txt
+       -name: cat2
+        run: cat 2.txt
 
