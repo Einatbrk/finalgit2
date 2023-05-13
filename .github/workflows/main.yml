@@ -5,10 +5,11 @@ on:
       - main
 env:
   First_name: "Einat"
-jobs:
-  Job1:
+  
+  jobs:
+    Job1:
     runs-on: ubunto-latest
-   steps:
-       - name: Hello
-         run: echo "hello"
+    steps:
+        - name: Hello
+          run: echo "hello"
     
