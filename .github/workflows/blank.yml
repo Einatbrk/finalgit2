@@ -12,5 +12,4 @@ jobs:
 
     steps:
         run: echo "Hello"
-                  run: lsb_release -a
-                        run: First_name: "-${{ github.sha }}"
+        run: First_name: "-${{ github.sha }}"
