@@ -26,3 +26,14 @@ jobs:
         run: |
               chmode777.test.sh
                ./test.sh
+  Job3:
+      env:
+          env.Last_name: "Barak"
+      runs-on: ubunto-latest
+      steps:
+         - name: general env
+           run: echo " application name ${{ env.First_name }}"
+         - name: local env
+           run: echo "$Last_name"
+         - name: secret1
+           run: echo ${{ secrets.MOBILE_NUM }}
