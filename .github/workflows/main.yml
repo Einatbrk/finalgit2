@@ -12,7 +12,9 @@ jobs:
     runs-on: ubunto-latest
     steps:
        run: echo "Hello"
-       run: aws --version
+      -name: ver
+       run:  |
+        lsb_release -a
        run: First_name: "-$({ github.sha })"
   job2:
     runs-on: ubunto-latest
