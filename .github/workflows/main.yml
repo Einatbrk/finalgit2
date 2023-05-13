@@ -9,7 +9,7 @@ env:
 Jobs:
   Job1:
     runs-on: ubunto-latest
-     steps:
+   steps:
        - name: Hello
          run: echo "hello"
     
