@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: print hello
         run: echo "Hello"
+              -name: ver
+                  run: aws --version
         
         - name: Version
           run: aws --version
