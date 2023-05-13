@@ -1,0 +1,23 @@
+name: Final_project
+
+env:
+  First_name: "Einat"
+  Relis_name: "First.name-${{github.sha}}
+on:
+  push:
+    branches: [ "main" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print hello
+        run: echo "Hello"
+        
+      - name: Version
+        run: aws --version
+        
+      - name: commit sha
+        run: First_name: "-${{ github.sha }}"
