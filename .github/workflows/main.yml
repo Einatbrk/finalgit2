@@ -5,8 +5,7 @@ on:
       - main
 env:
   First_name: "Einat"
-
-Jobs:
+jobs:
   Job1:
     runs-on: ubunto-latest
    steps:
