@@ -12,7 +12,6 @@ jobs:
     runs-on: ubunto-latest
     steps:
        run: echo "Hello"
-      -name: ver
        run:  |
         lsb_release -a
        run: First_name: "-$({ github.sha })"
