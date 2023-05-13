@@ -16,8 +16,8 @@ jobs:
       - name: print hello
         run: echo "Hello"
         
-      - name: Version
-        run: aws --version
+        - name: Version
+          run: aws --version
         
-      - name: commit sha
-        run: First_name: "-${{ github.sha }}"
+            - name: commit sha
+                run: First_name: "-${{ github.sha }}"
