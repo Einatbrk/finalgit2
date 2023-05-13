@@ -12,4 +12,3 @@ jobs:
 
     steps:
         run: echo "Hello"
-        run: First_name: "-${{ github.sha }}"
