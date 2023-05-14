@@ -13,8 +13,8 @@ jobs:
           run: echo "hello"
         - name: version
           run: lsb_release -r
-        - name: Hello
-          run: First_name:"-${{ github.sha }}"
+        - name: sha
+          run: echo "First_name:-${{ github.sha }}"
   Job2:
     runs-on: ubunto-latest
     steps:
@@ -24,12 +24,12 @@ jobs:
         run: cat 2.txt
       - name: run test.sh
         run: |
-              chmode777.test.sh
-               ./test.sh
+              chmode 777 test.sh
+              ./test.sh
   Job3:
+      runs-on: ubunto-latest
       env:
           env.Last_name: "Barak"
-      runs-on: ubunto-latest
       steps:
          - name: general env
            run: echo " application name ${{ env.First_name }}"
